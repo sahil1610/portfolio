@@ -1,0 +1,147 @@
+SAHIL GOYAL
+
+Engineering Manager – QA | Building Scalable, AI-Driven Quality
+Systems for SaaS Products
+​ +918586004630
+
+​ sahil.goyal2@gmail.com
+
+​ https://www.linkedin.com/in/sahilgoyal16/
+
+​ Delhi, India (Willing to relocate)
+
+SUMMARY
+Engineering Manager – QA with 12+ years of experience leading multi-squad QA teams and shaping quality engineering strategy
+for large-scale SaaS platforms. Adept at blending automation, AI, and data-driven insights to strengthen product reliability and
+accelerate releases. Known for building high-performing teams, establishing scalable frameworks, and driving a culture of
+ownership, innovation, and continuous improvement across engineering and product functions.
+
+EXPERIENCE
+Engineering Manager QA
+Wingify
+04/2025 - Present
+
+Remote
+
+• Leading a QA organization of 8 engineers across 5 product pods for VWO, defining quality strategy and ensuring alignment
+with business and engineering goals.
+• Spearheading QA AI initiatives - building Locator Healer, AI-based test generation, and AI-driven support ticket responders,
+reducing manual testing and improving efficiency by 40%.
+• Established a centralized test intelligence framework that enables data-driven defect analysis and faster release readiness
+decisions.
+• Built and scaled high-performing teams through mentoring, strategic hiring, and ownership culture, improving delivery
+predictability and retention.
+• Partnered with product and engineering leadership to introduce quality KPIs, reducing defect leakage by 30% and
+improving release confidence.
+
+Lead QA Engineer
+Wingify
+02/2021 - 03/2025
+
+Remote
+
+• Spearheaded cross-department automation integration, eliminating manual regressions and saving 500+ engineering
+hours monthly.
+• Led Protractor to Playwright (NodeJS) migration, cutting execution time by 50% and improving test stability.
+• Implemented Slack–Jenkins integration, reducing automation process time by 30% and improving visibility of test results.
+• Transitioned over 2,000 Runscope test cases to REST Assured, lowering infrastructure costs and improving API testing
+scalability.
+• Built a JMeter-based performance suite for data-intensive testing, increasing throughput and team productivity by 40%.
+
+Senior Software Engineer, Automation
+Springboard
+09/2019 - 02/2021
+
+Bangalore, India
+
+• Elevated automation coverage by 75%, improving quality assurance across multiple products.
+• Built and managed a UI automation framework (Selenium, Python, PyTest) integrated into CI/CD, increasing coverage by
+40%.
+• Analyzed QA processes across teams and advised CTO on a unified company-wide strategy, boosting efficiency by 20%.
+• Integrated LinkedIn Learning & Next Tech via LTI, enhancing the student experience and platform reliability.
+• Improved Django framework performance and backend stability, reducing production issues significantly.
+
+Senior QA Engineer
+Wingify
+07/2017 - 08/2019
+
+Delhi, India
+
+• Reduced testing cycles by 50% through improved test planning and automation.
+• Developed a Node.js API testing framework capable of testing 200+ enterprise-level API calls daily.
+• Implemented a Selenium Grid with Docker Swarm, enabling parallel execution and boosting throughput.
+• Built and executed end-to-end test cases for the VWO web app, strengthening release quality.
+
+EXPERIENCE
+Senior QA Engineer
+Compro Technologies
+07/2013 - 03/2017
+
+Delhi, India
+
+• Increased test coverage from 0% to 50% through strategic automation framework design using Java, TestNG, Selenium.
+• Integrated Jenkins CI, achieving a 30% improvement in build and deployment efficiency.
+• Streamlined QA artifacts, improving test documentation accuracy by 20.
+
+CORE COMPETENCIES
+Strategy • AI in Testing • Automation Architecture • Test Ops • CI/CD • Cross-functional Leadership • Scalable QA
+​ Quality
+Frameworks • Test Intelligence • SDLC Optimization • Agile & DevOps • Cloud QA • Team Building
+
+SKILLS & TOOLS
+Java, Python, JavaScript, TypeScript, AI
+​ Languages:
+Testing: Playwright, Selenium, Cypress, REST Assured, Postman, JMeter, PyTest, TestNG
+
+DevOps: Jenkins, Docker, CircleCI, GCP, Git, Bitbucket, CI/CD Pipelines
+QA Practices: Automation Strategy, API Testing, Performance Testing, SDLC/STLC, Test Management, AI in QA
+
+CERTIFICATION
+ISTQB Foundation Level
+May 2015
+
+EDUCATION
+Bachelor of Technology
+
+GPA
+
+Punjabi University Patiala
+2013 - 2014
+
+7.61 / 10.0
+
+Patiala, India
+
+ACHIEVEMENTS
+
+​ YBA Award at Springboard
+In recognition of excellent
+demonstration of continuous
+improvement in a structured and
+process-oriented approach.
+
+​ Wingify Champ
+Recognized multiple times for
+leadership in automation
+excellence and cross-team quality
+transformation.
+
+FIND ME ONLINE
+
+​ GitHub
+https://github.com/sahil1610
+
+LANGUAGES
+English
+
+Proficient
+
+Punjabi
+
+Native
+
+Hindi
+
+Native
+
+

@@ -1,0 +1,271 @@
+:root {
+  --primary: 220 90% 56%; /* Vibrant Blue */
+  --primary-dark: 220 90% 40%;
+  --secondary: 210 20% 96%; /* Light Gray */
+  --text-main: 220 40% 10%; /* Dark Blue/Black */
+  --text-muted: 220 20% 40%;
+  --background: 0 0% 100%;
+  --surface: 210 20% 98%;
+  --accent: 260 80% 60%; /* Purple accent */
+  
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: 220 90% 60%;
+    --primary-dark: 220 90% 50%;
+    --secondary: 220 30% 15%;
+    --text-main: 220 20% 95%;
+    --text-muted: 220 20% 70%;
+    --background: 220 30% 10%;
+    --surface: 220 30% 13%;
+    --accent: 260 80% 70%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: hsl(var(--background));
+  color: hsl(var(--text-main));
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: hsl(var(--primary));
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: hsl(var(--primary-dark));
+  transform: translateY(-1px);
+}
+
+.card {
+  background-color: hsl(var(--surface));
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--secondary));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--text-muted));
+}
+
+/* Glassmorphism & Animations */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dark .glass-panel {
+  background: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.grid-cols-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Custom Scrollbar for cards */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+  border-radius: 20px;
+}
+/* 2-Panel Layout Styles */
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.left-panel {
+  padding: 3rem 1.5rem;
+  background: hsl(var(--surface));
+  border-bottom: 1px solid hsl(var(--secondary));
+  width: 100%;
+}
+
+.right-panel {
+  padding: 3rem 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .layout-wrapper {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .left-panel {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid hsl(var(--secondary));
+    border-bottom: none;
+    background: hsl(var(--surface) / 0.5);
+    backdrop-filter: blur(20px);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: auto;
+  }
+
+  .right-panel {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding: 3rem;
+    width: auto;
+  }
+}
+
+/* Timeline Mobile Fixes */
+@media (max-width: 768px) {
+  .timeline-year {
+    display: none !important;
+  }
+  .timeline-line {
+    left: 15px !important;
+  }
+  .timeline-dot {
+    left: 8px !important;
+  }
+  .timeline-item {
+    gap: 1rem !important;
+    padding-left: 30px !important;
+  }
+  .mobile-year {
+    display: block !important;
+  }
+  
+  /* Adjust font sizes for mobile */
+  h1 { font-size: 2.5rem !important; }
+  h2 { font-size: 1.8rem !important; }
+  h3 { font-size: 1.4rem !important; }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Hide Sidebar in 2-panel layout since it's redundant or needs repositioning */
+@media (min-width: 1024px) {
+  .sidebar {
+    display: none !important;
+  }
+}
+
+.section-compact {
+  padding: 1.5rem 0;
+}
+
+/* Custom Scrollbar for panels */
+.left-panel::-webkit-scrollbar,
+.right-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.left-panel::-webkit-scrollbar-thumb,
+.right-panel::-webkit-scrollbar-thumb {
+  background: hsl(var(--secondary));
+  border-radius: 10px;
+}
+
+.left-panel::-webkit-scrollbar-track,
+.right-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
